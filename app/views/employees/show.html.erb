@@ -5,6 +5,7 @@
 <img width=540px src="<%=@employee.img_url%>">
 <h1><%=@employee.dog.name%></h1>
 
-<%= button_to "destroy", @employee, :method => :delete %>
+<%= button_to "destroy", @employee, :method => :delete %><br>
 
-<%=link_to "Edit This Employee", "/employees/#{@employee.id}/edit"%>
+<%=link_to "Edit This Employee", "/employees/#{@employee.id}/edit"%><br>
+<%=link_to "Employee Homepage", "/employees"%>
