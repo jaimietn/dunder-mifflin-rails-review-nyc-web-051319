@@ -1,0 +1,12 @@
+<h1><%=@dog.name%>
+<h2><%=@dog.breed%></h2>
+<h2><%=@dog.age%></h2>
+
+<h2>List of <%=@dog.name%>'s owners: </h2>
+<ul>
+<%@dog.owners.each do |owner| %>
+    <li>
+      <%=owner.first_name + " " + owner.last_name%>
+    </li>
+    <%end%>
+</ul>
