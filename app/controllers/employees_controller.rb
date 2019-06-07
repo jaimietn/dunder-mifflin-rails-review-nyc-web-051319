@@ -32,7 +32,7 @@ class EmployeesController < ApplicationController
 
   def edit
     @employee = Employee.find(params[:id])
-    @dogs = Dog.all
+
   end
 
   def update
